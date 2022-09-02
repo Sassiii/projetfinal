@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css?family=Francois+One|PT+Serif:400,400i,700,700i');
+* {box-sizing: border-box;}
+
+
+/* Style the input container */
+.input-container {
+
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+
+}
+
+/* Style the form icons */
+.icon {
+  padding: 10px;
+  background: darkorchid;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+  margin-left: 1em;
+  border-radius: 10%;
+  border: solid black;
+}
+
+/* Style the input fields */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  margin-right: 1em;
+}
+
+.input-field:focus {
+  border: 2px solid darkorchid;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: darkorchid;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+body {
+  font-family: 'PT Serif', sans-serif;
+  margin: 10px;
+  color: #2C3E50;
+  background-color: white;
+  font-size: 1.1em;
+}
+.logo {
+  font-weight: bold;
+  font-size: 1.9em;
+  margin-right: auto;
+  margin-left: 10px;
+  font-family: 'PT Serif', sans-serif;
+  color: white
+}
+
+.main {
+
+  /* margin-left: 10%; */
+  display: flex;
+  align-content: stretch;
+
+  margin-left: 10%;
+  
+}
+
+.nav {
+  /* background: linear-gradient(70deg, blue, pink); */
+  background:linear-gradient(blue, 10%, rgb(241, 200, 207));
+  margin: 0px;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: 'PT Serif', sans-serif;
+  font-weight: bold;
+}
+
+.nav-selected {
+  padding: 5px;
+  color: rgb(238, 108, 108);
+  font-weight: bold;
+  margin-top: 0px;
+  font-size: 1.1em;
+  margin-right: 5%;
+  margin-bottom: 0px;
+  left:0%;
+  position: fixed;
+  margin: 0 auto;
+}
+
+.nav-unselected {
+  padding: 5px;
+  margin-right: 5px;
+  font-size: 1.1em;
+  color: white;
+}
+.nav span:hover{
+  color:darkorchid;
+  transition:0.5s;
+  text-transform:uppercase;
+}
+.left-side {
+  float: left;
+  width: 40%;
+  /* background: center / contain no-repeat url("./left-side.jpg"); */
+  height:688px;
+  background-size:  700px 700px;
+  left:0%;
+  position: fixed;
+  margin: 0 auto;
+  margin-top: 0px;
+  margin-right: 5%;
+  margin-bottom: 0px;
+}
+/* .right-side {
+  float: right;
+  width: 50%;
+} */
+.right-side {
+
+  float: right;
+  width: 25%;
+  margin-top: 4em;
+  margin-right: 10%;
+  margin-left: 5%;
+  right: 0%;
+  position: fixed;
+  background-color: rgb(28, 28, 71);
+  border: solid black;
+  border-radius: 0%;
+}
+
+#visitorlogin{
+  margin-left: 2em;
+}
+
+#adminlogin{
+  margin-left: 2em; 
+}
+.checkboxes label{
+  color: white;
+  font-weight: bold;
+}
+#loginbtn{
+  width: 50%;
+  margin-left: 25%;
+  border:solid black;
+  border-radius: 10%;
+}
+
+.right-side h2{
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+}
+/* Style the button inside the input container */
+.search-container button {
+  background-color: darkorchid;
+  color: white;
+  
+  
+  width: 100%;
+  opacity: 0.9;
+  position: relative;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  height:37px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background: #ccc;
+}
+.search-container {
+  height: 50px;
+  float: right;
+  display: flex; /* 2. display flex to the rescue */
+  flex-direction: row;
+  
+}
+
+/* Style the input field inside the navbar */
+.search-container input {
+ display: block;
+  padding: 6px;
+  outline: none;
+  height:100%;
+  
+  margin-top: 8px;
+  font-size: 17px;
+  
+  width: 200px; /* adjust as needed (as long as it doesn't break the topnav) */
+}
+.search-container .input-field:focus {
+  border: 2px solid darkorchid;
+}
+.image-login{
+
+  height: 100vh;
+  width: 100vw;
+
+}
+
+
+/* styling card */
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 90%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+  float:right;
+  width:50%;
+  
+}
+
+.card-left{
+  float:left;
+  width: 50%;
+}
+
+.card img{
+  width: 150px;
+  height: 220px;
+  margin: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+#row {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: auto auto ;
+}
+.column {
+  float: left;
+  width: 100%;
+  margin:auto;
+  /*padding: 0 10px;*/
+}
+.announcement-home{
+  min-height: 10em;
+    display: table-cell;
+    vertical-align: middle;
+}
+/*style of images in create announcement*/
+.announcement-images{
+  min-height: 10em;
+  display: table-cell;
+  vertical-align: middle;
+}
+.announcement-images img{
+  height:100px;
+  width:100px;
+}
+
+/*style of like button in rendering anouncement*/
+ .card .like-button{
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font-size: 18px;
+  
+}
+.card .like-button button{
+  padding: 10px;
+  background: white;
+  color: darkorchid;
+ 
+  text-align: center;
+  border: 2px solid white;
+}
+.card .like-button .liked{
+  color: darkorchid;
+}
+.card .like-button .liked :active{
+  color:pink
+}
+.card .like-button .not-liked {
+  
+  color:darkorchid
+}
+.card .like-button .not-liked :active{
+  
+  color:red
+}
+/*admin styling */
+.post-list-entry {
+  list-style: none;
+  border: 1px solid #3498DB;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 75%;
+}
+
+.post-list-entry:hover {
+  cursor: pointer;
+  background-color: rgba(52, 152, 219, 0.17);
+}
+
+.post-list-entry-title {
+  font-weight: bold;
+  font-size: 1.2em;
+  font-family: 'Francois One';
+}
+
+.post-list-entry-stats {
+  font-size: .8em;
+}
+
+.stats-list-item-views {
+  font-weight: bold;
+}
+
+/* styling of an ounnouncement of host*/
+.hostAnnoucement{
+  background-color: rgb(252, 239, 241);
+  position: relative;
+  text-align: center;
+  font-family: cursive;
+  border-radius: 3px;
+  margin-left:400px;
+}
+.hostAnnoucementImg{
+  height:100px;
+  width:100px;
+  transition: transform .2s;
+}
+.hostAnnoucementImg:hover {
+  transform: scale(1.5);
+}
+.clear-all-btn{
+  
+     position:absolute;
+     top:0;
+     right:0;
+}
+.clear-all{
+  position: relative;
+  width:100%
+}
+/* welcome page*/
+.card-person img{
+width:100px;
+height:100px
+}
+.persons{
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.home-img img{
+  height: 500px;
+  width: 1500px;
+  /* background-image: url("./home.jpg"); */
+}
+.home h1 {
+ margin: 0 auto;
+ text-align: center;
+}
+video{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+.home-img{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  font-family: sans-serif;
+}
+.home{
+  position:absolute;
+  right:0;
+  width:100%;
+  min-height:100vh;
+  padding:100px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  color :#fff;
+  z-index: 2;
+}
+.text{
+  position: relative;
+  z-index: 10;
+}
+.home-img h1{
+  z-index: 10;
+  color:white
+}
+.overlay{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: #03a9f4;
+  mix-blend-mode: overlay;
+}
+.text h1{
+  font-size: 5em;
+  font-weight: 800;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.text h2{
+  font-size: 4em;
+  font-weight: 700;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.text p{
+font-size: 1.1em;
+margin:20px;
+font-weight: 400;
+max-width: 700px;
+}
+/* style of displaying the announcement to book*/
+.announcement-images{
+  min-height: 10em;
+  display: table-cell;
+  vertical-align: middle;
+}
+.announcement-images img{
+  height:100px;
+  width:100px;
+}
+
+ .card .like-button{
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font-size: 18px;
+}
+.card .like-button button{
+  padding: 10px;
+  background: white;
+  color: darkorchid;
+  text-align: center;
+  border: 2px solid white;
+}
+
+.announcement-Images img{
+  width: 150px;
+  height: 220px;
+  margin: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.announcement-Images img:hover{
+  box-shadow: 0 15px 16px 0 rgba(0,0,0,0.2);
+}
+.booking-Infromations{
+  border: 2px solid grey;
+  padding: 10px;
+  border-radius: 50px 20px;
+}
+/*styling the form af announcement*/
+.announcementForm{
+  margin: auto;
+  text-align: center;
+  margin-left: 100%;
+  width: 100%;
+}
+.clear-all {
+  background-color: red;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    
+    margin-right: 50%;
+    margin-left: 25%;
+    cursor: pointer;
+    margin-top: 10px;
+    opacity: 0.9;
+    text-align: center;
+}
+.hsitoric{
+  margin: left 25%;
+  margin-right: 25%;
+  position:absolute;
+}
